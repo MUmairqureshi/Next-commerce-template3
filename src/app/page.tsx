@@ -1,8 +1,11 @@
-import { Carousel } from 'components/carousel';
-import { ThreeItemGrid } from 'components/grid/three-items';
-import Footer from 'components/layout/footer';
-import { Suspense } from 'react';
-import { Button } from 'src/components/ui/button';
+import FourBoxes from './views/four-boxes';
+import { default as OurBrandss } from './views/our-brandss';
+import { default as SimpleSlider } from './views/slider';
+
+import Hero2 from './views/hero2';
+import OurLook from './views/our-look';
+import WhatPeopleSayy from './views/what-people-sayy';
+// import WhatPeopleSayy from './views/what-people-sayy';
 
 export const runtime = 'edge';
 
@@ -17,7 +20,19 @@ export default async function HomePage() {
   return (
     <>
       <div>
-        <Button>Click me</Button>
+        {/* <Hero/> */}
+        <Hero2 />
+        <FourBoxes />
+        <OurBrandss />
+        <OurLook />
+        {/* <Component/> */}
+        {/* <WhatPeopleSay/> */}
+        <WhatPeopleSayy />
+        {/* <ShoezecImages/> */}
+        <SimpleSlider />
+        {/* <Slider2/> */}
+        {/* <WhatPeopleSay2/> */}
+        {/* <Button>Click me</Button> */}
       </div>
       {/* <ThreeItemGrid />
       <Suspense>
